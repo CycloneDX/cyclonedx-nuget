@@ -70,10 +70,6 @@ public class AssetsParser {
             //rather than the SPDX identifier of the license itself. Genius! NOT! nuspec will need to
             //change the spec if they wish to provide accurate license information in boms.
 
-            final String sha512 = library.optString("sha512");
-            if (sha512 != null) {
-                component.addHash(new Hash(Hash.Algorithm.SHA_512, sha512));
-            }
             try {
                 final PackageURL purl = new PackageURL(
                         PackageURL.StandardTypes.NUGET, null, component.getName(), component.getVersion(), null, null
