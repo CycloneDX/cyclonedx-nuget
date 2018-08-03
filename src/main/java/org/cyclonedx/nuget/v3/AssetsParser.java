@@ -22,7 +22,6 @@ import com.github.packageurl.PackageURL;
 import com.microsoft.schemas.packaging.x2013.x05.nuspec.PackageDocument;
 import org.apache.commons.io.FileUtils;
 import org.cyclonedx.model.Component;
-import org.cyclonedx.model.Hash;
 import org.cyclonedx.nuget.NugetClient;
 import org.json.JSONObject;
 import java.io.File;
