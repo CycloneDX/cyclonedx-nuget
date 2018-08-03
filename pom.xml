@@ -80,20 +80,20 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@github.com:CycloneDX/cyclonedx-nuget-generator.git</connection>
-        <url>https://github.com/CycloneDX/cyclonedx-nuget-generator.git</url>
-        <developerConnection>scm:git:git@github.com:CycloneDX/cyclonedx-nuget-generator.git</developerConnection>
+        <connection>scm:git:git@github.com:CycloneDX/cyclonedx-nuget.git</connection>
+        <url>https://github.com/CycloneDX/cyclonedx-nuget.git</url>
+        <developerConnection>scm:git:git@github.com:CycloneDX/cyclonedx-nuget.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/CycloneDX/cyclonedx-nuget-generator/issues</url>
+        <url>https://github.com/CycloneDX/cyclonedx-nuget/issues</url>
     </issueManagement>
 
     <ciManagement>
         <system>travis-ci</system>
-        <url>https://travis-ci.org/CycloneDX/cyclonedx-nuget-generator</url>
+        <url>https://travis-ci.org/CycloneDX/cyclonedx-nuget</url>
     </ciManagement>
 
     <distributionManagement>
