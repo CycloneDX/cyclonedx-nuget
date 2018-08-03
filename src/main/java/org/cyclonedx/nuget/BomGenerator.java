@@ -41,18 +41,11 @@ public class BomGenerator {
     private final SourceType sourceType;
     private final File inFile;
     private final File outFile;
-    private boolean logToConsole = false;
 
     public BomGenerator(SourceType sourceType, File inFile, File outFile) {
         this.sourceType = sourceType;
         this.inFile = inFile;
         this.outFile = outFile;
-    }
-
-    public BomGenerator(SourceType sourceType, String inFile, String outFile) {
-        this.sourceType = sourceType;
-        this.inFile = new File(inFile);
-        this.outFile = new File(outFile);
     }
 
     public Document generate() throws Exception {
