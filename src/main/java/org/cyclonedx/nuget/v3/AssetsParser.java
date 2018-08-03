@@ -65,7 +65,6 @@ public class AssetsParser {
                 component.setDescription(metadata.getTitle());
             }
 
-
             //TODO: nuspec authors thought it would be a good idea to publish the URL to the license
             //rather than the SPDX identifier of the license itself. Genius! NOT! nuspec will need to
             //change the spec if they wish to provide accurate license information in boms.
