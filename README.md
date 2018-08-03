@@ -7,7 +7,7 @@
 CycloneDX for NuGet
 =========
 
-The CycloneDX for Nuget creates an aggregate of all dependencies and transitive dependencies of a project 
+CycloneDX for Nuget creates an aggregate of all dependencies and transitive dependencies of a project 
 and creates a valid CycloneDX bill-of-material document from the results. CycloneDX is a lightweight BoM 
 specification that is easily created, human readable, and simple to parse. The resulting bom.xml can be used
 with tools such as [OWASP Dependency-Track](https://dependencytrack.org/) for the continuous analysis of components.
