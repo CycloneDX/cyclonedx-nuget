@@ -14,13 +14,17 @@ with tools such as [OWASP Dependency-Track](https://dependencytrack.org/) for th
 
 Usage
 -------------------
+When building, the release will be created in the target/release directory. This directory contains
+executable .bat and .sh files for Windows and Unix/Linux. CycloneDX for NuGet requires Java 8.
 
+Displays Help
 ```bash
-java -jar cyclonedx-nuget
+cyclonedx-nuget.sh
 ```
 
+Creating a BoM
 ```bash
-java -jar cyclonedx-nuget -v3a --in /path/to/project.assets.jso --out /output/path
+cyclonedx-nuget.sh -v3a --in /path/to/project.assets.json --out /output/path
 ```
 
 
