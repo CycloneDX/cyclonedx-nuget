@@ -205,7 +205,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>us.springett.vulndbdatamirror.VulnDbDataMirror</mainClass>
+                            <mainClass>org.cyclonedx.nuget.BomGenerator</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -233,8 +233,8 @@
                 <configuration>
                     <programs>
                         <program>
-                            <mainClass>us.springett.vulndbdatamirror.VulnDbDataMirror</mainClass>
-                            <id>vulndb-data-mirror</id>
+                            <mainClass>org.cyclonedx.nuget.BomGenerator</mainClass>
+                            <id>cyclonedx-nuget</id>
                         </program>
                     </programs>
                     <assembleDirectory>${project.build.directory}/release</assembleDirectory>
