@@ -17,6 +17,8 @@
  */
 package org.cyclonedx.nuget.v3;
 
+import com.github.packageurl.MalformedPackageURLException;
+import com.github.packageurl.PackageURL;
 import com.microsoft.schemas.packaging.x2013.x05.nuspec.PackageDocument;
 import org.apache.commons.io.FileUtils;
 import org.cyclonedx.model.Component;
@@ -72,7 +74,14 @@ public class AssetsParser {
             if (sha512 != null) {
                 component.addHash(new Hash(Hash.Algorithm.SHA_512, sha512));
             }
-            component.setPurl("pkg:nuget/" + metadata.getId() + "@" + metadata.getVersion());
+            try {
+                final PackageURL purl = new PackageURL(
+                        PackageURL.StandardTypes.NUGET, null, component.getName(), component.getVersion(), null, null
+                );
+                component.setPurl(purl);
+            } catch (MalformedPackageURLException e) {
+                // todo : log this
+            }
             components.add(component);
         }
         return components;
